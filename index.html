@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>電卓</title>
+  </head>
+ 
+  <body>
+    <div class="main-container" name="dentaku">
+      <h3>電卓</h3>
+      <div id="display" disabled></div>
+      <div class="main-view"></div>
+      <div class="keyboard">
+        <div class="first board" name="keyboard">
+          <button onclick="num_button(this.innerHTML)">7</button>
+          <button onclick="num_button(this.innerHTML)">8</button>
+          <button onclick="num_button(this.innerHTML)">9</button>
+          <button onclick="operator(this.innerHTML)">+</button>
+        </div>
+        <div class="second board" name="keyboard">
+          <button onclick="num_button(this.innerHTML)">4</button>
+          <button onclick="num_button(this.innerHTML)">5</button>
+          <button onclick="num_button(this.innerHTML)">6</button>
+          <button onclick="operator(this.innerHTML)">-</button>
+        </div>
+        <div class="third board" name="keyboard">
+          <button onclick="num_button(this.innerHTML)">1</button>
+          <button onclick="num_button(this.innerHTML)">2</button>
+          <button onclick="num_button(this.innerHTML)">3</button>
+          <button class="multi" onclick="operator(this.innerHTML)" disabled>*</button>
+        </div>
+        <div class="fourth board" name="keyboard">
+          <button onclick="num_button(this.innerHTML)">0</button>
+          <button class="zero" onclick="num_button(this.innerHTML)" disabled>00</button>
+          <button class="dot" onclick="operator(this.innerHTML)" disabled>.</button>
+          <button class="div" onclick="operator(this.innerHTML)" disabled>/</button>
+        </div>
+        <div class="fifth board" name="keyboard">
+          <button onclick="reset()">AC</button>
+          <button onclick="calc_button()">=</button>
+        </div>
+      </div>
+    </div>
+ 
+    <script src="main.js"></script>
+  </body>
+</html>
