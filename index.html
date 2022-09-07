@@ -15,26 +15,26 @@
       <div class="main-view"></div>
       <div class="keyboard">
         <div class="first board" name="keyboard">
-          <button onclick="num_button(this.innerHTML)">7</button>
-          <button onclick="num_button(this.innerHTML)">8</button>
-          <button onclick="num_button(this.innerHTML)">9</button>
+          <button class="number" onclick="num_button(this.innerHTML)">7</button>
+          <button class="number" onclick="num_button(this.innerHTML)">8</button>
+          <button class="number" onclick="num_button(this.innerHTML)">9</button>
           <button onclick="operator(this.innerHTML)">+</button>
         </div>
         <div class="second board" name="keyboard">
-          <button onclick="num_button(this.innerHTML)">4</button>
-          <button onclick="num_button(this.innerHTML)">5</button>
-          <button onclick="num_button(this.innerHTML)">6</button>
-          <button onclick="operator(this.innerHTML)">-</button>
+          <button class="number" onclick="num_button(this.innerHTML)">4</button>
+          <button class="number" onclick="num_button(this.innerHTML)">5</button>
+          <button class="number" onclick="num_button(this.innerHTML)">6</button>
+          <button class="number" onclick="operator(this.innerHTML)">-</button>
         </div>
         <div class="third board" name="keyboard">
-          <button onclick="num_button(this.innerHTML)">1</button>
-          <button onclick="num_button(this.innerHTML)">2</button>
-          <button onclick="num_button(this.innerHTML)">3</button>
+          <button class="number" onclick="num_button(this.innerHTML)">1</button>
+          <button class="number" onclick="num_button(this.innerHTML)">2</button>
+          <button class="number" onclick="num_button(this.innerHTML)">3</button>
           <button class="multi" onclick="operator(this.innerHTML)" disabled>*</button>
         </div>
         <div class="fourth board" name="keyboard">
-          <button onclick="num_button(this.innerHTML)">0</button>
-          <button class="zero" onclick="num_button(this.innerHTML)" disabled>00</button>
+          <button class="zero" onclick="zero_button(this.innerHTML)">0</button>
+          <button class="double_zero" onclick="num_button(this.innerHTML)" disabled>00</button>
           <button class="dot" onclick="operator(this.innerHTML)" disabled>.</button>
           <button class="div" onclick="operator(this.innerHTML)" disabled>/</button>
         </div>
